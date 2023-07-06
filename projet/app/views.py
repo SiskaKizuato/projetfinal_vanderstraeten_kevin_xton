@@ -26,7 +26,7 @@ def login(request):
     return render(request, 'app/front/main/login.html')
 
 def productLeftSideBar2(request):
-    return render(request, 'app/front/main/product-left-sidebar-2.html')
+    return render(request, 'app/front/main/products-left-sidebar-2.html')
 
 def productsType1(request):
     return render(request, 'app/front/main/products-type-1.html')
