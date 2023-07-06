@@ -20,6 +20,7 @@ from app import views
 
 urlpatterns = [
     path('', views.index, name="index"),
+    path('homeBack', views.homeBack, name="homeBack"),
     path('blog-5/', views.blog5, name="blog5"),
     path('cart/', views.cart, name="cart"),
     path('checkout/', views.checkout, name="checkout"),

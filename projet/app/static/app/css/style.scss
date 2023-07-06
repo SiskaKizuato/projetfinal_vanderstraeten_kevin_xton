@@ -1553,47 +1553,47 @@ Main Banner CSS
 }
 .banner-bg1 {
     background: {
-        image: url(../../assets/img/main-banner1.jpg);
+        image: url(../img/main-banner1.jpg);
     };
 }
 .banner-bg2 {
     background: {
-        image: url(../../assets/img/main-banner2.jpg);
+        image: url(../img/main-banner2.jpg);
     };
 }
 .banner-bg3 {
     background: {
-        image: url(../../assets/img/main-banner3.jpg);
+        image: url(../img/main-banner3.jpg);
     };
 }
 .banner-bg4 {
     background: {
-        image: url(../../assets/img/offer-bg.jpg);
+        image: url(../img/offer-bg.jpg);
     };
 }
 .banner-bg5 {
     background: {
-        image: url(../../assets/img/main-banner5.jpg);
+        image: url(../img/main-banner5.jpg);
     };
 }
 .banner-bg6 {
     background: {
-        image: url(../../assets/img/main-banner6.jpg);
+        image: url(../img/main-banner6.jpg);
     };
 }
 .banner-bg7 {
     background: {
-        image: url(../../assets/img/main-banner2.jpg);
+        image: url(../img/main-banner2.jpg);
     };
 }
 .banner-bg8 {
     background: {
-        image: url(../../assets/img/main-banner2.jpg);
+        image: url(../img/main-banner2.jpg);
     };
 }
 .banner-bg9 {
     background: {
-        image: url(../../assets/img/main-banner2.jpg);
+        image: url(../img/main-banner2.jpg);
     };
 }
 .banner-section {
@@ -4825,12 +4825,12 @@ Offer CSS
     };
     &.bg-image1 {
         background: {
-            image: url(../../assets/img/offer-bg.jpg);
+            image: url(../img/offer-bg.jpg);
         };
     }
     &.bg-image2 {
         background: {
-            image: url(../../assets/img/offer-bg2.jpg);
+            image: url(../img/offer-bg2.jpg);
         };
     }
 }
@@ -5720,7 +5720,7 @@ Blog Details CSS
             border-radius: 5px 5px 0 0;
             background: {
                 color: $main-color;
-                image: url(../../assets/img/bg.jpg);
+                image: url(../img/bg.jpg);
                 position: center center;
                 size: cover;
                 repeat: no-repeat;
@@ -9198,13 +9198,13 @@ Widget Sidebar CSS
                         position: center center !important;
                     };
                     &.bg1 {
-                        background-image: url(../../assets/img/blog/img7.jpg);
+                        background-image: url(../img/blog/img7.jpg);
                     }
                     &.bg2 {
-                        background-image: url(../../assets/img/blog/img8.jpg);
+                        background-image: url(../img/blog/img8.jpg);
                     }
                     &.bg3 {
-                        background-image: url(../../assets/img/blog/img5.jpg);
+                        background-image: url(../img/blog/img5.jpg);
                     }
                 }
                 &::before, &::after {
@@ -9393,7 +9393,7 @@ Widget Sidebar CSS
         height: 400px;
         text-align: center;
         background: {
-            image: url(../../assets/img/offer-bg.jpg);
+            image: url(../img/offer-bg.jpg);
             position: center center;
             size: cover;
             repeat: no-repeat;
@@ -9469,7 +9469,7 @@ Coming Soon CSS
     z-index: 1;
     background: #f6f7fb;
     background: {
-        image: url(../../assets/img/coming-soon-bg.jpg);
+        image: url(../img/coming-soon-bg.jpg);
         position: top center;
         size: cover;
         repeat: no-repeat;

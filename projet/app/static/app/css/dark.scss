@@ -45,7 +45,7 @@ $black-color: #ffffff;
             margin: auto 0;
             transition: 0.4s;
             box-shadow: 0 0px 15px #2020203d;
-            background: url(../../assets/img/night.png);
+            background: url(../img/night.png);
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -58,7 +58,7 @@ $black-color: #ffffff;
     }
     input:checked + .slider:before {
         transform: translateX(24px);
-        background: url(../../assets/img/sunny.png);
+        background: url(../img/sunny.png);
         background-repeat: no-repeat;
         background-position: center;
     }
