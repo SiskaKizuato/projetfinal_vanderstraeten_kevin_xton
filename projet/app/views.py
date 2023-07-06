@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 
 # Create your views here.
+
+# XXXXX FRONT XXXXX
 def index(request):
     return render(request, 'app/front/main/index.html')
 
@@ -38,3 +40,6 @@ def singleBlog1(request):
 def trackOrder(request):
     return render(request, 'app/front/main/track-order.html')
 
+# XXXXX BACK XXXXX
+def homeBack(request):
+    return render(request, 'app/back/main/homeBack.html')
