@@ -32,6 +32,14 @@
         {% block content %}
         {% endblock content %}
 
+        {% include 'app/front/modals/sideBar.html' %}
+        {% include 'app/front/modals/quickView.html' %}
+        {% include 'app/front/modals/shoppingCart.html' %}
+        {% include 'app/front/modals/wishlist.html' %}
+        {% include 'app/front/modals/sizeGuide.html' %}
+        {% include 'app/front/modals/shipping.html' %}
+        {% include 'app/front/modals/productsFilter.html' %}
+
         {% include 'app/front/footer/footer.html' %}
 
         <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
