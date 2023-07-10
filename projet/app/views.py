@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout, get_user_model
 from django.contrib.auth.hashers import make_password
 from .forms import SignupForm
-from .models import Profile# Create your views here.
+from .models import Profile
+from django.contrib.auth.models import User
+
 # XXXXX FRONT XXXXX
+
 def index(request):
     return render(request, 'app/front/main/index.html')
 
@@ -22,6 +25,28 @@ def contact(request):
 def error404(request):
     return render(request, 'app/front/main/error-404.html')
 
+def lostPassword(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        email = request.POST['email']
+        password = request.POST['password']
+
+        User = get_user_model()
+        try:
+            profile = Profile.objects.get(username=username)
+            if profile.email == email:
+                user = profile
+                user.set_password(password)
+                user.save()
+                return redirect('index')
+            else:
+                error_message = "Invalid email address."
+        except Profile.DoesNotExist:
+            error_message = "Invalid username."
+        
+        return render(request, 'app/front/main/lostPassword.html', {'error_message': error_message})
+    else:
+        return render(request, 'app/front/main/lostPassword.html')
 
 
 def productLeftSideBar2(request):
@@ -69,6 +94,5 @@ def singleBlog1(request):
 def trackOrder(request):
     return render(request, 'app/front/main/track-order.html')
 
-# XXXXX BACK XXXXX
-def homeBack(request):
-    return render(request, 'app/back/main/homeBack.html')
+def indexBack(request):
+    return render(request, 'app/back/main/indexBack.html')

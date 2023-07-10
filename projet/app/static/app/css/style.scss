@@ -133,6 +133,18 @@ p {
 .pt-70 {
     padding-top: 70px;
 }
+#borderTest{
+    border: 2px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+#fuflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pb-70 {
     padding-bottom: 70px;
 }

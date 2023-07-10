@@ -4,9 +4,10 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('homeBack', views.homeBack, name="homeBack"),
+    path('indexBack', views.indexBack, name="indexBack"),
     path('blog-5/', views.blog5, name="blog5"),
     path('cart/', views.cart, name="cart"),
+    path('lostPassword/', views.lostPassword, name="lostPassword"),
     path('checkout/', views.checkout, name="checkout"),
     path('contact/', views.contact, name="contact"),
     path('error-404/', views.error404, name="error404"),

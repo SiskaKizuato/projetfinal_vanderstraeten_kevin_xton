@@ -13,7 +13,7 @@
                     <div class="col-lg-6 col-md-12">
                         <ul class="header-top-menu">
                             {% if user.is_active %}
-                                <li><a href="#"><i class='bx bxs-user'></i>{{ user.username }}</a></li>
+                                <li><a href="{% url 'indexBack' %}"><i class='bx bxs-user'></i>{{ user.username }}</a></li>
                             {% else %}
                                 <li><a href="{% url 'login' %}"><i class='bx bxs-user'></i>My Account</a></li>
                             {% endif %}
