@@ -12,9 +12,17 @@
 
                     <div class="col-lg-6 col-md-12">
                         <ul class="header-top-menu">
-                            <li><a href="{% url 'login' %}"><i class='bx bxs-user'></i> My Account</a></li>
+                            {% if user.is_active %}
+                                <li><a href="#"><i class='bx bxs-user'></i>{{ user.username }}</a></li>
+                            {% else %}
+                                <li><a href="{% url 'login' %}"><i class='bx bxs-user'></i>My Account</a></li>
+                            {% endif %}
                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal"><i class='bx bx-heart'></i> Wishlist</a></li>
-                            <li><a href="{% url 'login' %}"><i class='bx bx-log-in'></i> Login</a></li>
+                            {% if user.is_active %}
+                                <li><a href="{% url 'logout' %}"><i class='bx bx-log-in'></i>Logout</a></li>
+                            {% else %}
+                                <li><a href="{% url 'login' %}"><i class='bx bx-log-in'></i>Login</a></li>
+                            {% endif %}
                         </ul>
 
                         <ul class="header-top-others-option">

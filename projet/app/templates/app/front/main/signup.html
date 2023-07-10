@@ -23,7 +23,12 @@
                     <h2>Create an Account</h2>
 
                     <form class="signup-form" method="POST">
-                        {% csrf_token %}
+                        {% csrf_token %}        
+                        <div class="form-group">
+                            <label>User Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your username" id="id_username" name="username">
+                        </div>
+
                         <div class="form-group">
                             <label>First Name</label>
                             <input type="text" class="form-control" placeholder="Enter your name" id="id_first_name" name="first_name">
