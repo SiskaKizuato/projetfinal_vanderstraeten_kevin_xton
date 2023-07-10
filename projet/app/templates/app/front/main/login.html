@@ -24,11 +24,7 @@
                         <div class="login-content">
                             <h2>Login</h2>
 
-                            {% if user.is_authenticated %}
-                                <p>HelloWorld</p>
-                            {% endif %}
-
-                            <form class="login-form" method="POST" action="{% url 'login' %}">
+                            <form class="login-form" method="POST">
                                 {% csrf_token %}
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Username" name="username">
