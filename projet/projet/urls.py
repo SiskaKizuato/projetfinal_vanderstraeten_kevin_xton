@@ -18,4 +18,11 @@ urlpatterns = [
     path('signup/', views.signup, name="signup"),
     path('single-blog-1/', views.singleBlog1, name="singleBlog1"),
     path('track-order/', views.trackOrder, name="trackOrder"),
+    path('allUsersBack/', views.allUsersBack, name="allUsersBack"),
+    path('blog5Back/', views.blog5Back, name="blog5Back"),
+    path('categoriesBack/', views.categoriesBack, name="categoriesBack"),
+    path('contactBack/', views.contactBack, name="contactBack"),
+    path('ordersBack/', views.ordersBack, name="ordersBack"),
+    path('productLeftSideBar2Back/', views.productLeftSideBar2Back, name="productLeftSideBar2Back"),
+    path('profileBack/', views.profileBack, name="profileBack")
 ]

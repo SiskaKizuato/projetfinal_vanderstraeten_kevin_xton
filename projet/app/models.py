@@ -6,7 +6,7 @@ class Profile(AbstractUser):
     class Role(models.TextChoices):
         ADMIN = 'admin'
         WEB = 'web'
-        REDACTEUR = 'redacteur'
+        STOCK = 'stock'
         MEMBRE = 'membre'
     
     role = models.CharField(choices=Role.choices, max_length=20, default=Role.MEMBRE)

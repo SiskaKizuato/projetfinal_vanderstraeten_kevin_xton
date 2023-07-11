@@ -94,5 +94,28 @@ def singleBlog1(request):
 def trackOrder(request):
     return render(request, 'app/front/main/track-order.html')
 
+# XXXXX BACK XXXXX
+
 def indexBack(request):
     return render(request, 'app/back/main/indexBack.html')
+
+def allUsersBack(request):
+    return render(request, 'app/back/main/allUsersBack.html')
+
+def blog5Back(request):
+    return render(request, 'app/back/main/blog5Back.html')
+
+def categoriesBack(request):
+    return render(request, 'app/back/main/categoriesBack.html')
+
+def contactBack(request):
+    return render(request, 'app/back/main/contactBack.html')
+
+def ordersBack(request):
+    return render(request, 'app/back/main/ordersBack.html')
+
+def productLeftSideBar2Back(request):
+    return render(request, 'app/back/main/productLeftSideBar2Back.html')
+
+def profileBack(request):
+    return render(request, 'app/back/main/profileBack.html')
